@@ -1,0 +1,26 @@
+.melon-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.card {
+    margin-bottom: 20px;
+}
+
+ .login-container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f8f9fa; */
+}
+.login-card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container login-container">
+    <div class="card login-card">
+        <div class="card-body">
+            <h3 class="card-title text-center">Please Sign in</h3>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="username">{{ form.username.label }}</label>
+                    {{ form.username(class_="form-control", id="username") }}
+                </div>
+                <div class="form-group">
+                    <label for="password">{{ form.password.label }}</label>
+                    {{ form.password(class_="form-control", id="password") }}
+                </div>
+                {{ form.csrf_token }}
+                <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
